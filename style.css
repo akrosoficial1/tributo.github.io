@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsla(222, 62%, 10%);
+    color: rgb(211, 194, 173);
+}
+
+header#header {
+    margin: auto;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    border-radius: 10px;
+    background-color: hsl(222, 62%, 29%);
+    opacity: 0.97;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    box-shadow: 0 -1px 5px white;
+}
+
+header#header:hover {
+    box-shadow: 0 -1px 12px white;
+}
+
+header#header div#jobs {
+    width: auto;
+    height: 100px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+header div#jobs img {
+    width: 60px;
+    height: auto;
+}
+
+header div#jobs h1#title {
+    font-size: 60px;
+}
+
+header div#nav {
+    width: auto;
+    height: 100px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+}
+
+header#header div#nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(211, 194, 173);
+    opacity: 0.75;
+}
+
+header#header div#nav a:hover {
+    color: hsla(222, 62%, 10%);;
+    border-bottom: 2px solid hsla(222, 62%, 10%);;
+    padding-bottom: 3px;
+    opacity: 1;
+}
+
+main#main {
+    position: relative;
+    top: 110px;
+    z-index: 1;
+}
+
+section#one {
+    margin: auto;
+    width: 98%;
+    height: 460px;
+    background: url("https://i.pinimg.com/originals/be/cb/ca/becbca09cc81c9ecd1ce133c836b3f25.gif") center;
+    border-radius: 20px;
+    border: hsl(222, 62%, 29%);
+    opacity: 1;
+    box-shadow: 0 -2px 5px #413F42, 0 2px 5px #413F42;
+}
+
+section#one:hover {
+    box-shadow: 0 -3px 5px #413F42, 0 3px 5px #413F42;
+    ;
+}
+
+section#one h2#sub-title1 {
+    font-size: 80px;
+    position: relative;
+    left: 60px;
+    top: 200px;
+}
+
+section#one p#message {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    left: 580px;
+    top: 300px;
+    opacity: 0.7;
+}
+
+section#two {
+    margin: 30px auto auto auto;
+    width: 98%;
+    height: 500px;
+}
+
+section#two h2#biografia {
+    text-align: center;
+    font-size: 80px;
+    padding-bottom: 10px;
+}
+
+section#two div#container {
+    margin: 10px auto auto auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+section#two div#container img {
+    width: 400px;
+    border: solid 3px black;
+    border-radius: 30px;
+    opacity: 0.7;
+    box-shadow: 0 3px 5px #413F42, 0 -3px 5px #413F42;
+}
+
+section#two div#container div#container-2 {
+    background-color: hsla(222, 62%, 29%, 0.568);
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 3px black;
+    color: rgb(211, 194, 173);
+    box-shadow: 0 3px 5px #413F42, 0 -3px 5px #413F42;
+}
+
+section#two div#container div#container-2:hover,
+section#two div#container img:hover {
+    box-shadow: 0 4px 5px #413F42, 0 -4px 5px #413F42;
+}
+
+section#two div#container div#container-2 h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+section#two div#container div#container-2 p {
+    text-align: justify;
+}
+
+section#two div#container div#container-2 a {
+    color: rgb(211, 194, 173);
+    font-weight: bold;
+}
+
+section#two div#container div#container-2 a:hover {
+    color: hsla(222, 62%, 10%);
+}
