@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: hsla(222, 62%, 10%);
-    color: rgb(211, 194, 173);
+    background-color: #F1F1F1;
+    color: rgb(243, 242, 242);
 }
 
 header#header {
@@ -15,7 +15,7 @@ header#header {
     height: 90px;
     position: fixed;
     border-radius: 10px;
-    background-color: hsl(222, 62%, 29%);
+    background-color: #747474;
     opacity: 0.97;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ header#header {
 }
 
 header#header:hover {
-    box-shadow: 0 -1px 12px white;
+    box-shadow: 0 -1px 12px hsla(222, 62%, 10%);
 }
 
 header#header div#jobs {
@@ -60,13 +60,14 @@ header div#nav {
 header#header div#nav a {
     font-size: 20px;
     text-decoration: none;
-    color: rgb(211, 194, 173);
-    opacity: 0.75;
+    color: rgb(243, 242, 242);
+    opacity: 0.9;
 }
 
 header#header div#nav a:hover {
-    color: hsla(222, 62%, 10%);;
-    border-bottom: 2px solid hsla(222, 62%, 10%);;
+    color: hsla(222, 62%, 10%);
+    border-bottom: 2px solid hsla(222, 62%, 10%);
+    ;
     padding-bottom: 3px;
     opacity: 1;
 }
@@ -85,12 +86,11 @@ section#one {
     border-radius: 20px;
     border: hsl(222, 62%, 29%);
     opacity: 1;
-    box-shadow: 0 -2px 5px #413F42, 0 2px 5px #413F42;
+    box-shadow: 0 -2px 5px hsla(222, 62%, 10%), 0 2px 5px hsla(222, 62%, 10%);
 }
 
 section#one:hover {
-    box-shadow: 0 -3px 5px #413F42, 0 3px 5px #413F42;
-    ;
+    box-shadow: 0 -3px 5px hsla(222, 62%, 10%), 0 3px 5px hsla(222, 62%, 10%);
 }
 
 section#one h2#sub-title1 {
@@ -106,13 +106,20 @@ section#one p#message {
     position: relative;
     left: 580px;
     top: 300px;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 section#two {
-    margin: 30px auto auto auto;
+    margin: 30px 10px 30px 10px;
     width: 98%;
-    height: 500px;
+    height: 550px;
+    background-color: #747474;
+    border-radius: 20px;
+    box-shadow: 0 -1px 5px white;
+}
+
+section#two:hover {
+    box-shadow: 0 -1px 3px hsla(222, 62%, 10%);
 }
 
 section#two h2#biografia {
@@ -132,25 +139,24 @@ section#two div#container {
 }
 
 section#two div#container img {
-    width: 400px;
+    width: 395px;
     border: solid 3px black;
     border-radius: 30px;
-    opacity: 0.7;
+    opacity: 0.9;
     box-shadow: 0 3px 5px #413F42, 0 -3px 5px #413F42;
 }
 
 section#two div#container div#container-2 {
-    background-color: hsla(222, 62%, 29%, 0.568);
+    background-color: black;
     border-radius: 10px;
     padding: 10px;
     border: solid 3px black;
-    color: rgb(211, 194, 173);
     box-shadow: 0 3px 5px #413F42, 0 -3px 5px #413F42;
 }
 
 section#two div#container div#container-2:hover,
 section#two div#container img:hover {
-    box-shadow: 0 4px 5px #413F42, 0 -4px 5px #413F42;
+    box-shadow: 0 4px 5px white, 0 -4px 5px white;
 }
 
 section#two div#container div#container-2 h3 {
@@ -160,6 +166,7 @@ section#two div#container div#container-2 h3 {
 
 section#two div#container div#container-2 p {
     text-align: justify;
+    color: rgb(218, 210, 201);
 }
 
 section#two div#container div#container-2 a {
