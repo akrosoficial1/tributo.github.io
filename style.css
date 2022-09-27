@@ -293,6 +293,10 @@ footer#footer div#about-me p i:hover {
         font-size: 5vw;
     }
 
+    section#one p#message {
+        left: 17vw;
+    }
+
     section#two div#container img {
         width: 80vw;
     }
