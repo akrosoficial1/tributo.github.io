@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,7 +15,8 @@ header#header {
     width: 100%;
     height: 90px;
     position: fixed;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     background-color: #747474;
     opacity: 0.97;
     display: flex;
@@ -169,23 +171,56 @@ section#two div#container div#container-2 p {
     color: rgb(218, 210, 201);
 }
 
-section#two div#container div#container-2 a {
+section#two div#container div#container-2 a, footer#footer div#about-me p a {
     color: rgb(211, 194, 173);
     font-weight: bold;
 }
 
-section#two div#container div#container-2 a:hover {
+section#two div#container div#container-2 a:hover, footer#footer div#about-me p a:hover {
     color: white;
     text-decoration: none;
-    font-size: 16.2px;
 }
 
 footer#footer {
     width: 100%;
     height: 100px;
-    background-color: black;
+    background-color: #000000;
     margin-top: 150px;
     position: relative;
     top: auto;
     bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer#footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer#footer div#thank {
+    margin: auto;
+}
+
+footer#footer div#thank h2#title-footer {
+    text-align: center;
+    font-size: 35px;
+}
+
+footer#footer div#about-me {
+    position: relative;
+    width: auto;
+    height: 30px;
+    bottom: 0px;
+    color: rgb(211, 194, 173);
+    text-align: center;
+}
+
+footer#footer div#about-me p i{
+    margin: 0 5px;
+    padding-bottom: 5px;
+}
+
+footer#footer div#about-me p i:hover {
+    border-bottom: 1px solid white;
 }
