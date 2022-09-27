@@ -24,6 +24,7 @@ header#header {
     justify-content: space-between;
     z-index: 2;
     box-shadow: 0 -1px 5px white;
+    gap: 50px;
 }
 
 header#header:hover {
@@ -40,18 +41,18 @@ header#header div#jobs {
     gap: 30px;
 }
 
-header div#jobs img {
+header#header div#jobs img {
     width: 60px;
     height: auto;
 }
 
 header div#jobs h1#title {
-    font-size: 60px;
+    font-size: 70px;
 }
 
 header div#nav {
     width: auto;
-    height: 100px;
+    height: 30px;
     margin-right: 50px;
     display: flex;
     align-items: center;
@@ -69,7 +70,6 @@ header#header div#nav a {
 header#header div#nav a:hover {
     color: hsla(222, 62%, 10%);
     border-bottom: 2px solid hsla(222, 62%, 10%);
-    ;
     padding-bottom: 3px;
     opacity: 1;
 }
@@ -96,25 +96,27 @@ section#one:hover {
 }
 
 section#one h2#sub-title1 {
-    font-size: 80px;
+    display: inline;
+    font-size: 8vw;
     position: relative;
-    left: 60px;
-    top: 200px;
+    left: 5vw;
+    top: 20vw;
 }
 
 section#one p#message {
-    font-size: 50px;
+    display: inline;
+    font-size: 5vw;
     font-weight: bold;
     position: relative;
-    left: 580px;
-    top: 300px;
+    left: 20vw;
+    top: 350px;
     opacity: 0.9;
 }
 
 section#two {
     margin: 30px 10px 30px 10px;
     width: 98%;
-    height: 550px;
+    height: auto;
     background-color: #747474;
     border-radius: 20px;
     box-shadow: 0 -1px 5px white;
@@ -126,7 +128,7 @@ section#two:hover {
 
 section#two h2#biografia {
     text-align: center;
-    font-size: 80px;
+    font-size: 6vw;
     padding-bottom: 10px;
 }
 
@@ -149,6 +151,7 @@ section#two div#container img {
 }
 
 section#two div#container div#container-2 {
+    width: auto;
     background-color: black;
     border-radius: 10px;
     padding: 10px;
@@ -163,7 +166,7 @@ section#two div#container img:hover {
 
 section#two div#container div#container-2 h3 {
     text-align: center;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 section#two div#container div#container-2 p {
@@ -171,12 +174,14 @@ section#two div#container div#container-2 p {
     color: rgb(218, 210, 201);
 }
 
-section#two div#container div#container-2 a, footer#footer div#about-me p a {
+section#two div#container div#container-2 a,
+footer#footer div#about-me p a {
     color: rgb(211, 194, 173);
     font-weight: bold;
 }
 
-section#two div#container div#container-2 a:hover, footer#footer div#about-me p a:hover {
+section#two div#container div#container-2 a:hover,
+footer#footer div#about-me p a:hover {
     color: white;
     text-decoration: none;
 }
@@ -191,9 +196,6 @@ footer#footer {
     bottom: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
-
-footer#footer {
     display: flex;
     flex-direction: column;
 }
@@ -204,23 +206,69 @@ footer#footer div#thank {
 
 footer#footer div#thank h2#title-footer {
     text-align: center;
-    font-size: 35px;
+    font-size: 3vw;
+}
+
+footer#footer div#about-me div {
+    display: flex;
+    justify-content: center;
 }
 
 footer#footer div#about-me {
     position: relative;
     width: auto;
-    height: 30px;
+    height: auto;
     bottom: 0px;
     color: rgb(211, 194, 173);
     text-align: center;
 }
 
-footer#footer div#about-me p i{
+footer#footer div#about-me p i {
     margin: 0 5px;
     padding-bottom: 5px;
 }
 
 footer#footer div#about-me p i:hover {
     border-bottom: 1px solid white;
+}
+
+@media (max-width: 980px) {
+
+    header#header {
+        height: 110px;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    main#main {
+        top: 130px;
+    }
+}
+
+@media (max-width: 930px) {
+
+    section#two div#container {
+        flex-direction: column;
+    }
+
+    section#two div#container div#container-2 {
+        max-width: 400px;
+    }
+
+    section#two div#container div#container-2 h3 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 670px) {
+
+    header div#jobs h1#title {
+        font-size: 10vw;
+    }
+
+    footer#footer div#about-me div {
+        flex-direction: column;
+    }
+
 }
