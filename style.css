@@ -175,7 +175,9 @@ section#two div#container div#container-2 a {
 }
 
 section#two div#container div#container-2 a:hover {
-    color: hsla(222, 62%, 10%);
+    color: white;
+    text-decoration: none;
+    font-size: 16.2px;
 }
 
 footer#footer {
