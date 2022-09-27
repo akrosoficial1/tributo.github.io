@@ -46,11 +46,11 @@ header#header div#jobs img {
     height: auto;
 }
 
-header div#jobs h1#title {
+header#header div#jobs h1#title {
     font-size: 70px;
 }
 
-header div#nav {
+header#header div#nav {
     width: auto;
     height: 30px;
     margin-right: 50px;
@@ -144,6 +144,7 @@ section#two div#container {
 
 section#two div#container img {
     width: 395px;
+    height: auto;
     border: solid 3px black;
     border-radius: 30px;
     opacity: 0.9;
@@ -263,12 +264,49 @@ footer#footer div#about-me p i:hover {
 
 @media (max-width: 670px) {
 
-    header div#jobs h1#title {
+    header#header div#jobs h1#title {
         font-size: 10vw;
     }
 
     footer#footer div#about-me div {
         flex-direction: column;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    header#header div#jobs img{
+        width: 10vw;
+    }
+
+    header#header div#jobs h1#title {
+        font-size: 8vw;
+    }
+
+    header#header div#nav {
+        margin: auto;
+        gap: 4vw;
+    }
+
+    header#header div#nav a {
+        font-size: 5vw;
+    }
+
+    section#two div#container img {
+        width: 80vw;
+    }
+
+    section#two div#container div#container-2 h2 {
+        font-size: 8vw;
+    }
+
+    footer#footer div#thank h2#title-footer {
+        font-size: 4vw;
+    }
+
+    footer#footer div#about-me div p {
+        font-size: 3vw;
     }
 
 }
