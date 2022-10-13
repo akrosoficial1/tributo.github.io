@@ -6,4 +6,4 @@ Pagina tributo a Steve Jobs
 
 #### Link
 
-[Ver sitio web](https://akrosoficial1.github.io/tributo.github.io/)
+[Ver sitio web](https://majestic-kleicha-7ef5ff.netlify.app/)
